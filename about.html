@@ -1,180 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Bosco Oria</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-</head>
-<body class="bg-light">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+  </head>
+  <body class="bg-light">
     <div class="mobile-menu-overlay" id="mobileMenu">
-        <button class="mobile-close-btn" onclick="toggleMenu()">✕</button>
-        
-        <a href="index.html#work" class="mobile-link" onclick="toggleMenu()">Work</a>
-        <a href="about.html" class="mobile-link" onclick="toggleMenu()">About</a>
-        <a href="contact.html" class="mobile-link" onclick="toggleMenu()">Contact</a>
-        <a href="https://instagram.com" class="mobile-link" onclick="toggleMenu()">Instagram</a>
+      <button class="mobile-close-btn" onclick="toggleMenu()">✕</button>
+
+      <a href="index.html#work" class="mobile-link" onclick="toggleMenu()"
+        >Work</a
+      >
+      <a href="about.html" class="mobile-link" onclick="toggleMenu()">About</a>
+      <a href="contact.html" class="mobile-link" onclick="toggleMenu()"
+        >Contact</a
+      >
+      <a href="https://instagram.com" class="mobile-link" onclick="toggleMenu()"
+        >Instagram</a
+      >
     </div>
 
     <nav class="navbar-navegador">
-        <div class="nav-container">
-            
-            <div class="nav-group left d-none d-md-flex">
-                <a href="index.html#work" class="nav-link-item">WORK</a>
-                <a href="about.html" class="nav-link-item">ABOUT</a>
-            </div>
-
-            <a class="brand-center" href="index.html">
-                BOSCO ORIA ©
-            </a>
-            
-            <div class="nav-group right d-none d-md-flex">
-                <a href="contact.html" class="nav-link-item">CONTACT</a>
-                <a href="https://www.instagram.com/oriaservices/" class="nav-link-item">IG</a>
-            </div>
-
-            <button class="mobile-toggle d-flex d-md-none" onclick="toggleMenu()">
-                ☰
-            </button>
-
+      <div class="nav-container">
+        <div class="nav-group left d-none d-md-flex">
+          <a href="index.html#work" class="nav-link-item">WORK</a>
+          <a href="about.html" class="nav-link-item">ABOUT</a>
         </div>
+
+        <a class="brand-center" href="index.html"> BOSCO ORIA © </a>
+
+        <div class="nav-group right d-none d-md-flex">
+          <a href="contact.html" class="nav-link-item">CONTACT</a>
+          <a
+            href="https://www.instagram.com/oriaservices/"
+            class="nav-link-item"
+            >IG</a
+          >
+        </div>
+
+        <button class="mobile-toggle d-flex d-md-none" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
     </nav>
 
     <main class="container main-inner">
-        
-        <div class="row align-items-center">
-            
-            <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="about-img-container anim-element">
-                    <img src="assets/images/Bosco.png" class="about-img" alt="Bosco Oria">
-                </div>
-            </div>
-
-            <div class="col-lg-6 ps-lg-5">
-                <div class="anim-element">
-                    <span class="badge rounded-pill text-bg-dark mb-3 text-uppercase tracking-wide">
-                        Based in Madrid
-                    </span>
-                    
-                    <h1 class="display-1 text-start mb-4" style="font-size: clamp(3rem, 5vw, 5rem) !important; text-align: left !important;">
-                        BOSCO<br>ORIA.
-                    </h1>
-
-                    <h4 class="text-accent fw-bold text-uppercase mb-4" style="letter-spacing: 1px;">
-                        Founder of PANYEE DEPT.
-                    </h4>
-
-                    <p class="lead text-muted mb-4" style="line-height: 1.8; font-weight: 500;">
-                        Soy Bosco Oria, diseñador gráfico y creador de contenido especializado en moda y cultura streetwear. 
-                        Mi enfoque combina la estética editorial con la crudeza visual de la calle.
-                    </p>
-
-                    <p class="text-muted mb-5" style="line-height: 1.8;">
-                        Actualmente dirijo la visión creativa de <strong>PANYEE DEPT.</strong> y ayudo a marcas a encontrar su voz visual a través de estrategias de contenido, branding e identidad visual. Obsesionado con los detalles, la tipografía y el impacto visual.
-                    </p>
-
-                    <div class="mb-5">
-                        <p class="fw-bold mb-3 text-uppercase font-small">Technical Skills & Tools</p>
-                        
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">Adobe Photoshop</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">Illustrator</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">InDesign</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">Figma</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">After Effects</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">Branding Strategy</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">Art Direction</span>
-                            <span class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal">Social Media</span>
-                        </div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-graphic mt-0">
-                        Let's Talk
-                    </a>
-                </div>
-            </div>
-
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="about-img-container anim-element">
+            <img
+              src="assets/images/Bosco.png"
+              class="about-img"
+              alt="Bosco Oria"
+            />
+          </div>
         </div>
 
+        <div class="col-lg-6 ps-lg-5">
+          <div class="anim-element">
+            <span
+              class="badge rounded-pill text-bg-dark mb-3 text-uppercase tracking-wide"
+            >
+              Based in Madrid
+            </span>
+
+            <h1
+              class="display-1 text-start mb-4"
+              style="
+                font-size: clamp(3rem, 5vw, 5rem) !important;
+                text-align: left !important;
+              "
+            >
+              BOSCO<br />ORIA.
+            </h1>
+
+            <h4
+              class="text-accent fw-bold text-uppercase mb-4"
+              style="letter-spacing: 1px"
+            >
+              Founder of PANYEE DEPT.
+            </h4>
+
+            <p
+              class="lead text-muted mb-4"
+              style="line-height: 1.8; font-weight: 500"
+            >
+              Soy Bosco Oria, diseñador gráfico y creador de contenido
+              especializado en moda y cultura streetwear. Mi enfoque combina la
+              estética editorial con la crudeza visual de la calle.
+            </p>
+
+            <p class="text-muted mb-5" style="line-height: 1.8">
+              Actualmente dirijo la visión creativa de
+              <strong>PANYEE DEPT.</strong> y ayudo a marcas a encontrar su voz
+              visual a través de estrategias de contenido, branding e identidad
+              visual. Obsesionado con los detalles, la tipografía y el impacto
+              visual.
+            </p>
+
+            <div class="mb-5">
+              <p class="fw-bold mb-3 text-uppercase font-small">
+                Technical Skills & Tools
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >Adobe Photoshop</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >Illustrator</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >InDesign</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >Figma</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >After Effects</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >Branding Strategy</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >Art Direction</span
+                >
+                <span
+                  class="badge rounded-pill border border-dark text-dark bg-transparent px-3 py-2 fw-normal"
+                  >Social Media</span
+                >
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-graphic mt-0"> Let's Talk </a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer-pro">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                        <h4 class="display-5 fw-bold mb-4" style="color: #000;">Let's build<br>something iconic.</h4>
-                        <p class="text-muted mb-4" style="max-width: 300px;">
-                            Suscríbete para recibir noticias sobre nuevos drops de PANYEE y actualizaciones de estudio.
-                        </p>
-                        
-                        <form action="#" class="footer-input-group">
-                            <input type="email" class="footer-input" placeholder="Your email address">
-                            <button type="submit" class="footer-submit">JOIN</button>
-                        </form>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h4 class="display-5 fw-bold mb-4" style="color: #000">
+              Let's build<br />something iconic.
+            </h4>
+            <p class="text-muted mb-4" style="max-width: 300px">
+              Suscríbete para recibir noticias sobre nuevos drops de PANYEE y
+              actualizaciones de estudio.
+            </p>
 
-                    <div class="col-6 col-lg-2 offset-lg-1">
-                        <h5 class="footer-heading">Sitemap</h5>
-                        <a href="index.html" class="footer-link">Index</a>
-                        <a href="index.html#work" class="footer-link">Selected Work</a>
-                        <a href="about.html" class="footer-link">About Me</a>
-                        <a href="contact.html" class="footer-link">Contact</a>
-                    </div>
+            <form action="#" class="footer-input-group">
+              <input
+                type="email"
+                class="footer-input"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="footer-submit">JOIN</button>
+            </form>
+          </div>
 
-                    <div class="col-6 col-lg-2">
-                        <h5 class="footer-heading">Socials</h5>
-                        <a href="https://instagram.com" target="_blank" class="footer-link">Instagram</a>
-                        <a href="https://linkedin.com" target="_blank" class="footer-link">LinkedIn</a>
-                        <a href="https://behance.net" target="_blank" class="footer-link">Behance</a>
-                        <a href="mailto:Boscooria11@gmail.com" class="footer-link">Email</a>
-                    </div>
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <h5 class="footer-heading">Sitemap</h5>
+            <a href="index.html" class="footer-link">Index</a>
+            <a href="index.html#work" class="footer-link">Selected Work</a>
+            <a href="about.html" class="footer-link">About Me</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
 
-                    <div class="col-lg-2 mt-4 mt-lg-0">
-                        <h5 class="footer-heading">Info</h5>
-                        <p class="text-muted small mb-1">Version: 1.0.0</p>
-                        <p class="text-muted small mb-1">Time: Madrid (CET)</p>
-                        <p class="text-muted small mb-0">Status: <span class="text-accent fw-bold">Available</span></p>
-                    </div>
+          <div class="col-6 col-lg-2">
+            <h5 class="footer-heading">Socials</h5>
+            <a href="https://instagram.com" target="_blank" class="footer-link"
+              >Instagram</a
+            >
+            <a href="https://linkedin.com" target="_blank" class="footer-link"
+              >LinkedIn</a
+            >
+            <a href="https://behance.net" target="_blank" class="footer-link"
+              >Behance</a
+            >
+            <a href="mailto:Boscooria11@gmail.com" class="footer-link">Email</a>
+          </div>
 
-                </div>
-            </div>
+          <div class="col-lg-2 mt-4 mt-lg-0">
+            <h5 class="footer-heading">Info</h5>
+            <p class="text-muted small mb-1">Version: 1.0.0</p>
+            <p class="text-muted small mb-1">Time: Madrid (CET)</p>
+            <p class="text-muted small mb-0">
+              Status: <span class="text-accent fw-bold">Available</span>
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <div class="footer-big-brand">BOSCO ORIA</div>
+      <div class="footer-big-brand">BOSCO ORIA</div>
 
-            <div class="footer-bottom">
-                <div class="container d-flex justify-content-between">
-                    <span>© 2025 PANYEE DEPT.</span>
-                    <span>ALL RIGHTS RESERVED</span>
-                    <span class="d-none d-md-block">DESIGNED & CODED BY BOSCO</span>
-                </div>
-            </div>
-        </footer>
+      <div class="footer-bottom">
+        <div class="container d-flex justify-content-between">
+          <span>© 2025 PANYEE DEPT.</span>
+          <span>ALL RIGHTS RESERVED</span>
+          <span class="d-none d-md-block">DESIGNED & CODED BY BOSCO</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('active');
-            
-            if (menu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
         }
+      }
     </script>
-</body>
+  </body>
 </html>
