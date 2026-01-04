@@ -1,0 +1,664 @@
+/* ============================================================
+   ASSETS/CSS/COMPONENTS.CSS - MASTER SHEET FINAL V2
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   0. RESET GLOBAL & BASE
+   ------------------------------------------------------------ */
+html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+/* Fix para eliminar espacios blancos superiores en la Home */
+main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* ------------------------------------------------------------
+   1. UTILIDADES & LAYOUT
+   ------------------------------------------------------------ */
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.tracking-wide {
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+.hover-underline:hover {
+    text-decoration: underline !important;
+}
+
+.font-small {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* CLASE CLAVE: Espaciado para páginas interiores (About/Contact) */
+/* Esto arregla que el contenido se quede debajo del menú */
+.main-inner {
+    padding-top: 180px !important;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+    .main-inner {
+        padding-top: 120px !important;
+    }
+}
+
+/* ------------------------------------------------------------
+   2. BOTONES & UI (BADGES)
+   ------------------------------------------------------------ */
+.btn-graphic {
+    color: #0059ff !important;
+    border: 1.5px solid #0059ff !important;
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 8px 24px;
+    letter-spacing: -0.5px;
+    margin-top: 1rem;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-graphic:hover {
+    background-color: #0059ff !important;
+    color: var(--bg-color) !important;
+    transform: translateY(-2px);
+}
+
+.text-bg-dark {
+    background-color: #0059ff !important;
+    color:  var(--bg-color) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none !important;
+    padding: 8px 20px !important;
+}
+
+/* ------------------------------------------------------------
+   3. NAVEGADOR FLOTANTE (CÁPSULA DESKTOP)
+   ------------------------------------------------------------ */
+.navbar-navegador {
+    position: fixed !important;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    height: 60px;
+    padding: 0 30px;
+    background-color: #0059ff !important;
+    border-radius: 100px;
+    box-shadow: 0 15px 35px rgba(0, 89, 255, 0.25);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.brand-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    color:  var(--bg-color)!important;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-group {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+}
+
+.nav-group.right {
+    justify-content: flex-end;
+}
+
+.nav-link-item {
+    color:  var(--bg-color) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link-item:hover {
+    opacity: 0.7;
+}
+
+/* ------------------------------------------------------------
+   4. HOME: HERO SECTION (Streetwear Style)
+   ------------------------------------------------------------ */
+.hero-modern {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Cinta Infinita (Marquee) */
+.marquee-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%) rotate(-5deg) scale(1.1);
+    background: #0059ff;
+    padding: 15px 0;
+    z-index: 1;
+    white-space: nowrap;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scrolling 20s linear infinite;
+}
+
+.marquee-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 40px;
+    letter-spacing: 2px;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Texto Gigante Interactivo */
+.hero-titles-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    mix-blend-mode: normal;
+    cursor: default;
+    width: 100%;
+}
+
+.big-type {
+    font-size: clamp(4rem, 13vw, 13rem);
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin: 0;
+    transition: all 0.4s ease;
+}
+
+/* Estados del Texto (Solid vs Outline) */
+.type-solid {
+    color: #0059ff;
+    -webkit-text-stroke: 0px;
+}
+
+.type-outline {
+    color: var(--bg-color);
+    -webkit-text-stroke: 2px #0059ff;
+}
+
+/* Interacción Hover */
+.hero-titles-wrapper:hover .type-solid {
+    color: transparent;
+    -webkit-text-stroke: 2px #0059ff;
+    transform: translateX(-10px);
+}
+
+.hero-titles-wrapper:hover .type-outline {
+    color: #0059ff;
+    -webkit-text-stroke: 0px;
+    transform: translateX(10px);
+}
+
+/* Indicador de Scroll */
+.scroll-indicator-modern {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #0059ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    animation: bounce 2s infinite;
+}
+
+.scroll-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.scroll-arrow {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-4px);
+    }
+}
+
+/* ------------------------------------------------------------
+   5. WORK SECTION (Catalog Style)
+   ------------------------------------------------------------ */
+.work-list-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.work-item-street {
+    border-top: 1px solid #000;
+    padding: 3rem 0;
+    position: relative;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.work-item-street:last-child {
+    border-bottom: 1px solid #000;
+}
+
+/* Elementos del Work Item */
+.work-num {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.work-title-big {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 0.9;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.work-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.tag-pill {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #666;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Imágenes Work */
+.work-img-wrapper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f0f0f0;
+    filter: grayscale(100%) opacity(0.8);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.work-img-street {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform 0.7s ease;
+}
+
+/* Interacciones Hover Work */
+.work-item-street:hover {
+    background-color: #f9f9f9;
+}
+
+.work-item-street:hover .work-title-big {
+    color: #0059ff;
+    padding-left: 10px;
+}
+
+.work-item-street:hover .work-img-wrapper {
+    filter: grayscale(0%) opacity(1);
+}
+
+.work-item-street:hover .work-img-street {
+    transform: scale(1);
+}
+
+.work-item-street:hover .tag-pill {
+    border-color: #000;
+    color: #000;
+}
+
+/* ------------------------------------------------------------
+   6. PÁGINA: ABOUT
+   ------------------------------------------------------------ */
+.about-img-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.about-img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+/* ------------------------------------------------------------
+   7. PÁGINA: CONTACT (Formulario & Estilos)
+   ------------------------------------------------------------ */
+.contact-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #0059ff;
+    margin-bottom: 1.5rem;
+}
+
+.contact-hero-desc {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+/* Estilos del Formulario */
+.form-wrapper-premium {
+    padding-left: 2rem;
+}
+
+.form-control-line {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.form-control-line:focus {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #0059ff;
+    padding-left: 10px;
+}
+
+.form-control-line::placeholder {
+    color: #aaa;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.form-label-custom {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Enlaces Contacto */
+.contact-email-big {
+    display: block;
+    font-size: clamp(2.5rem, 8vw, 7rem);
+    font-weight: 900;
+    color: #e0e0e0;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: -2px;
+    transition: all 0.3s ease;
+}
+
+.contact-email-big:hover {
+    color: #0059ff;
+    transform: scale(1.02);
+}
+
+.social-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0059ff;
+    border-bottom: 1px solid #0059ff;
+}
+
+/* ------------------------------------------------------------
+   8. PÁGINA: 404
+   ------------------------------------------------------------ */
+.body-404 {
+    overflow: hidden;
+    cursor: crosshair;
+    user-select: none;
+    background-color: var(--bg-color);
+}
+
+#drawCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content-wrapper-404 {
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.interactive-btn {
+    pointer-events: auto;
+}
+
+.error-code {
+    font-size: clamp(8rem, 20vw, 15rem);
+    font-weight: 800;
+    opacity: 0.1;
+}
+
+.btn-clear {
+    border: 1px solid #ccc;
+    color: #2f5499;
+    background:  var(--bg-color);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------
+   9. MENÚ MÓVIL Y RESPONSIVE (MEDIA QUERIES)
+   ------------------------------------------------------------ */
+
+/* Menú Overlay (Pantalla Azul Completa) */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0059ff;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mobile-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color:  var(--bg-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-link:hover {
+    transform: scale(1.1);
+    color: rgba(255,255,255,0.8);
+}
+
+.mobile-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    color:  var(--bg-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Botón Hamburguesa (Estilo Base) */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color:  var(--bg-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* MEDIA QUERY PRINCIPAL PARA MÓVIL (MAX 768px) */
+@media (max-width: 768px) {
+    /* 1. Activar Hamburguesa */
+    .mobile-toggle {
+        display: block;
+    }
+
+    .nav-group {
+        display: none !important;
+    }
+
+    .navbar-navegador {
+        width: 90%;
+        padding: 0 20px;
+        height: 50px;
+        top: 20px;
+    }
+
+    /* 2. Ajuste texto Hero en móvil (PARA QUE NO SE MONTE) */
+    .big-type {
+        font-size: clamp(3rem, 15vw, 6rem); /* Más pequeño en móvil */
+        line-height: 1.1; /* Más aire vertical */
+    }
+
+    /* 3. Ajuste Formulario en móvil */
+    .form-wrapper-premium {
+        padding-left: 0;
+        margin-top: 3rem;
+    }
+
+    .contact-hero-desc {
+        max-width: 100%;
+    }
+}

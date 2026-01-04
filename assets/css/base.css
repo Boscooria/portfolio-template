@@ -1,0 +1,20 @@
+/* VARIABLES CSS - Neutras y Profesionales */
+:root {
+    --bg-color: #e8e9eb; 
+    --text-color: #0059ff; /* Azul eléctrico PANYEE */
+    --accent-color: #2f5499; /* Azul oscuro */
+    --font-main: 'Montserrat', sans-serif; /* FALTABA EL PUNTO Y COMA AQUÍ */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+}
+html, body {
+    overflow-x: hidden; /* Esto mata cualquier franja blanca lateral */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

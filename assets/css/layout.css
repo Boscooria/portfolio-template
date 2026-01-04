@@ -1,0 +1,18 @@
+/* LAYOUT - Estructura Global */
+
+/* 1. Empujamos el contenido para que no lo tape la barra de navegación */
+main {
+    padding-top: 180px !important; /* Espacio de seguridad superior */
+    min-height: 100vh;
+}
+
+/* 2. Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 3. Ajustes de contenedores */
+section {
+    position: relative;
+    z-index: 1;
+}
