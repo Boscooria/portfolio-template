@@ -1,20 +1,32 @@
-/* VARIABLES CSS - Neutras y Profesionales */
+/* =========================================
+   BASE.CSS - VARIABLES & RESET
+   ========================================= */
+
 :root {
-    --bg-color: #e8e9eb; 
-    --text-color: #0059ff; /* Azul eléctrico PANYEE */
-    --accent-color: #2f5499; /* Azul oscuro */
-    --font-main: 'Montserrat', sans-serif; /* FALTABA EL PUNTO Y COMA AQUÍ */
+    /* PALETA PANYEE DEPT. */
+    --bg-color: #e8e9eb;      /* Gris Fondo */
+    --text-color: #0059ff;    /* Azul Eléctrico */
+    --accent-color: #2f5499;  /* Azul Oscuro (Base texto) */
+
+    /* UTILIDADES (Opacidades del Azul Oscuro) */
+    --accent-80: rgba(47, 84, 153, 0.8);
+    --accent-60: rgba(47, 84, 153, 0.6);
+    --accent-40: rgba(47, 84, 153, 0.4); 
+    --accent-10: rgba(47, 84, 153, 0.1); 
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-main);
-    -webkit-font-smoothing: antialiased;
-}
 html, body {
-    overflow-x: hidden; /* Esto mata cualquier franja blanca lateral */
+    overflow-x: hidden !important;
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* Utilidades de Texto Globales */
+.text-accent { color: var(--text-color) !important; }
+.tracking-wide { letter-spacing: 0.15em; font-weight: 500; }
+.font-small { font-size: 0.85rem; letter-spacing: 1px; }
+.hover-underline:hover { text-decoration: underline !important; }

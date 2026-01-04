@@ -1,18 +1,32 @@
-/* LAYOUT - Estructura Global */
+/* =========================================
+   LAYOUT.CSS - ESTRUCTURA & ESPACIADO
+   ========================================= */
 
 /* 1. Empujamos el contenido para que no lo tape la barra de navegación */
 main {
-    padding-top: 180px !important; /* Espacio de seguridad superior */
-    min-height: 100vh;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
-/* 2. Scroll suave */
-html {
-    scroll-behavior: smooth;
+/* Espaciado para páginas interiores (About/Contact) */
+/* Para que el menú flotante no tape el contenido */
+.main-inner {
+    padding-top: 180px !important;
+    padding-bottom: 5rem;
 }
 
-/* 3. Ajustes de contenedores */
-section {
-    position: relative;
-    z-index: 1;
+/* Wrapper general para secciones que necesiten márgenes laterales */
+.container-fluid {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   MEDIA QUERIES (LAYOUT)
+   ========================================= */
+@media (max-width: 768px) {
+    .main-inner {
+        padding-top: 120px !important;
+    }
 }

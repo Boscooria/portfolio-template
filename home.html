@@ -69,8 +69,17 @@
             <div class="hero-titles-wrapper anim-element">
                 <h1 class="big-type type-solid">GRAPHIC</h1>
                 <h1 class="big-type type-outline">DESIGNER</h1>
-            </div>
 
+                <div class="mt-4 position-relative" style="z-index: 5;">
+                    <p class="text-uppercase tracking-wide fw-bold mb-4" style="color: #0059ff; letter-spacing: 3px;">
+                        Based in Madrid • Freelance
+                    </p>
+                    <a href="#work" class="btn btn-graphic mt-0" style="background: white !important;">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+            
             <div class="scroll-indicator-modern anim-element" style="animation-delay: 1s;">
                 <span class="scroll-text">Selected Works</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="scroll-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -80,11 +89,83 @@
 
         </header>
 
+        <section class="product-slider-section anim-element">
+            <div class="container-fluid">
+                <p class="text-uppercase fw-bold mb-4 ms-3 font-small text-muted">Latest Drops & Concepts</p>
+                
+                <div class="product-scroller-container">
+                    <button class="slider-arrow left" onclick="scrollSlider(-300)">
+                        &lt;
+                    </button>
+                    <button class="slider-arrow right" onclick="scrollSlider(300)">
+                        &gt;
+                    </button>
+
+                    <div class="product-horizontal-scroller" id="productScroller">
+                        
+                        <a href="#" class="product-slide-card">
+                            <div class="product-slide-img-wrapper">
+                                <span class="product-badge">New</span>
+                                <img src="https://placehold.co/400x400/f0f0f0/333?text=ACID+POSTER" class="product-slide-img" alt="Acid Graphics">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Acid Graphics</h3>
+                                <span class="product-price">Visual Research</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="product-slide-card">
+                            <div class="product-slide-img-wrapper">
+                                <span class="product-badge" style="background-color: #0059ff;">Selected</span>
+                                <img src="https://placehold.co/400x400/f0f0f0/333?text=TYPOGRAPHY" class="product-slide-img" alt="Typography">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Typography Exp</h3>
+                                <span class="product-price">Editorial</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="product-slide-card">
+                            <div class="product-slide-img-wrapper">
+                                <img src="https://placehold.co/400x400/f0f0f0/333?text=URBAN+CAMP" class="product-slide-img" alt="Urban Campaign">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Urban Campaign</h3>
+                                <span class="product-price">Art Direction</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="product-slide-card">
+                            <div class="product-slide-img-wrapper">
+                                <span class="product-badge">Drop 01</span>
+                                <img src="https://placehold.co/400x400/f0f0f0/333?text=PANYEE+TEE" class="product-slide-img" alt="Panyee Tee">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Panyee SS25</h3>
+                                <span class="product-price">Apparel</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="product-slide-card">
+                            <div class="product-slide-img-wrapper">
+                                <img src="https://placehold.co/400x400/f0f0f0/333?text=3D+ASSETS" class="product-slide-img" alt="3D Assets">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">3D Assets</h3>
+                                <span class="product-price">Motion</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="work" class="container work-list-container">
             
             <div class="mb-5 anim-element">
                 <span class="text-uppercase fw-bold tracking-wide text-muted" style="font-size: 0.8rem;">
-                    Selected Projects (03)
+                    Featured Case Studies (03)
                 </span>
             </div>
 
@@ -148,10 +229,57 @@
 
         </section>
 
-        <footer class="py-5 text-center mt-5">
-            <p class="lead text-accent fw-bold mb-4">Let's create something together.</p>
-            <a href="contact.html" class="btn btn-graphic">Get in Touch</a>
-            <p class="small text-muted mt-5 mb-0">© 2025 Bosco Oria.</p>
+        <footer class="footer-pro">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h4 class="display-5 fw-bold mb-4" style="color: #000;">Let's build<br>something iconic.</h4>
+                        <p class="text-muted mb-4" style="max-width: 300px;">
+                            Suscríbete para recibir noticias sobre nuevos drops de PANYEE y actualizaciones de estudio.
+                        </p>
+                        
+                        <form action="#" class="footer-input-group">
+                            <input type="email" class="footer-input" placeholder="Your email address">
+                            <button type="submit" class="footer-submit">JOIN</button>
+                        </form>
+                    </div>
+
+                    <div class="col-6 col-lg-2 offset-lg-1">
+                        <h5 class="footer-heading">Sitemap</h5>
+                        <a href="index.html" class="footer-link">Index</a>
+                        <a href="index.html#work" class="footer-link">Selected Work</a>
+                        <a href="about.html" class="footer-link">About Me</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h5 class="footer-heading">Socials</h5>
+                        <a href="https://instagram.com" target="_blank" class="footer-link">Instagram</a>
+                        <a href="https://linkedin.com" target="_blank" class="footer-link">LinkedIn</a>
+                        <a href="https://behance.net" target="_blank" class="footer-link">Behance</a>
+                        <a href="mailto:Boscooria11@gmail.com" class="footer-link">Email</a>
+                    </div>
+
+                    <div class="col-lg-2 mt-4 mt-lg-0">
+                        <h5 class="footer-heading">Info</h5>
+                        <p class="text-muted small mb-1">Version: 1.0.0</p>
+                        <p class="text-muted small mb-1">Time: Madrid (CET)</p>
+                        <p class="text-muted small mb-0">Status: <span class="text-accent fw-bold">Available</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-big-brand">BOSCO ORIA</div>
+
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between">
+                    <span>© 2025 PANYEE DEPT.</span>
+                    <span>ALL RIGHTS RESERVED</span>
+                    <span class="d-none d-md-block">DESIGNED & CODED BY BOSCO</span>
+                </div>
+            </div>
         </footer>
 
     </main>
@@ -172,6 +300,14 @@
             } else {
                 document.body.style.overflow = '';
             }
+        }
+
+        function scrollSlider(amount) {
+            const slider = document.getElementById('productScroller');
+            slider.scrollBy({
+                left: amount,
+                behavior: 'smooth'
+            });
         }
     </script>
 </body>

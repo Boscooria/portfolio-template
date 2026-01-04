@@ -1,4 +1,13 @@
-/* assets/css/index.css */
-@import 'base.css';
-@import 'layout.css';
-@import 'components.css';
+/* =========================================
+   INDEX.CSS - MASTER SHEET
+   ========================================= */
+
+/* 1. Base (Variables & Reset) */
+@import url('./base.css');
+
+/* 2. Layout (Estructura) */
+@import url('./layout.css');
+
+/* 3. Componentes (Estilos Visuales) */
+@import url('./components.css');
+
