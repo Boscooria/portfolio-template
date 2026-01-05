@@ -1,12 +1,8 @@
-/* =========================================
-   BASE.CSS - VARIABLES & RESET
-   ========================================= */
-
 :root {
     /* PALETA PANYEE DEPT. */
     --bg-color: #e8e9eb;      /* Gris Fondo */
-    --text-color: #0059ff;    /* Azul Eléctrico */
-    --accent-color: #2f5499;  /* Azul Oscuro (Base texto) */
+    --text-color: #2f5499;    /* Azul Eléctrico */
+    --accent-color: #0059ff;  /* Azul Oscuro (Base texto) */
 
     /* UTILIDADES (Opacidades del Azul Oscuro) */
     --accent-80: rgba(47, 84, 153, 0.8);

@@ -107,3 +107,34 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+// RELOJ INTELIGENTE (DETECTA PAÍS/CIUDAD DEL USUARIO)
+function updateLocalTime() {
+    const clockElement = document.getElementById('footer-clock'); // Ojo: he cambiado el ID para que sea más genérico
+    if (clockElement) {
+        const now = new Date();
+        
+        // 1. Detectar la zona horaria del usuario (ej: "Europe/London")
+        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        
+        // 2. Extraer solo el nombre de la ciudad y quitar guiones bajos
+        let city = "Local";
+        if (userTimeZone && userTimeZone.includes('/')) {
+            city = userTimeZone.split('/')[1].replace(/_/g, ' ');
+        }
+
+        // 3. Formatear la hora local
+        const timeString = now.toLocaleTimeString('es-ES', { 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit',
+            hour12: false 
+        });
+        
+        // 4. Actualizar el HTML (Hora en Azul Panyee)
+        clockElement.innerHTML = `Time: ${city} <span style="color: #0059ff; font-weight: 700;">${timeString}</span>`;
+    }
+}
+
+// Actualizar cada segundo
+setInterval(updateLocalTime, 1000);
+updateLocalTime();

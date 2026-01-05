@@ -82,14 +82,14 @@ main {
 }
 
 .btn-graphic:hover {
-  background-color: var(--accent-color) !important;
-  color: #ffffff !important;
+  background-color: var(--text-color) !important;
+  color: var(--accent-color) !important;
   transform: translateY(-2px);
 }
 
 .text-bg-dark {
   background-color: var(--accent-color) !important;
-  color: white !important;
+  color: var(--bg-color) !important;
   font-weight: 700;
   letter-spacing: 1px;
   border: none !important;
@@ -133,7 +133,7 @@ main {
   font-weight: 800;
   font-size: 1rem;
   letter-spacing: -0.5px;
-  color: #ffffff !important;
+  color: var(--bg-color) !important;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
@@ -150,7 +150,7 @@ main {
 }
 
 .nav-link-item {
-  color: #ffffff !important;
+  color: var(--bg-color) !important;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.75rem;
@@ -204,7 +204,7 @@ main {
   font-family: var(--font-main);
   font-weight: 800;
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--bg-color);
   text-transform: uppercase;
   padding: 0 40px;
   letter-spacing: 2px;
@@ -330,7 +330,7 @@ main {
   font-family: var(--font-main);
   font-weight: 700;
   font-size: 1rem;
-  color: #999;
+  color: var(--text-color);
   margin-bottom: 1rem;
   display: block;
 }
@@ -480,15 +480,28 @@ main {
   display: block;
 }
 
+/* Busca esto en la Sección 6 y reemplázalo */
+
 .contact-email-big {
   display: block;
-  font-size: clamp(2.5rem, 8vw, 7rem);
+  /* CAMBIO CLAVE: Reducimos el mínimo de 2.5rem a 1.5rem */
+  /* clamp(Mínimo, Ideal, Máximo) */
+  font-size: clamp(1.5rem, 6vw, 6rem);
+
   font-weight: 900;
   color: #cbd5e1;
   text-decoration: none;
-  line-height: 1;
-  letter-spacing: -2px;
+  line-height: 1.1;
+
+  /* CAMBIO: Menos espacio entre letras para que quepa mejor */
+  letter-spacing: -1px;
+
   transition: all 0.3s ease;
+
+  /* SEGURIDAD: Si aún así no cabe, que baje de línea en vez de cortarse */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .contact-email-big:hover {
@@ -646,6 +659,9 @@ main {
   .contact-hero-desc {
     max-width: 100%;
   }
+  .contact-email-big {
+    font-size: 1.3rem; /* Forzamos tamaño más pequeño en pantallas estrechas */
+  }
 }
 
 /* ------------------------------------------------------------
@@ -653,7 +669,7 @@ main {
    ------------------------------------------------------------ */
 .product-slider-section {
   padding: 5rem 0;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
   border-bottom: 1px solid #eee;
 }
 
@@ -891,21 +907,26 @@ main {
   letter-spacing: 1px;
 }
 
+/* Firma Gigante al final */
 .footer-big-brand {
-  font-size: clamp(4rem, 18vw, 16rem);
+  font-size: clamp(2.5rem, 13.5vw, 16rem);
+
   font-weight: 900;
   line-height: 0.75;
   text-align: center;
-  color: #ffffff;
+  color: var(--accent-color);
   margin-top: 4rem;
   margin-bottom: -2.5rem;
   letter-spacing: -0.04em;
   user-select: none;
   pointer-events: none;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(47, 84, 153, 0.15);
+  border-top: 1px solid var(--accent-color);
   padding: 20px 0;
   margin-top: 3rem;
   font-size: 0.7rem;
@@ -925,4 +946,16 @@ main {
   .footer-heading {
     margin-top: 2rem;
   }
+}
+/* =========================================
+   ESTILOS ESPECÍFICOS ABOUT (Clean Code)
+   ========================================= */
+
+.title-hero-about {
+    color: var(--accent-color); /* Azul Eléctrico */
+    font-weight: 800;           /* Extra Bold */
+    font-size: clamp(3.5rem, 8vw, 6rem); /* Tamaño fluido ajustado */
+    line-height: 0.9;           /* Interlineado apretado */
+    letter-spacing: -1px;       /* Kerning moderno */
+    text-transform: uppercase;
 }
