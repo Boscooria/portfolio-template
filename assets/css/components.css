@@ -6,9 +6,9 @@
    0. RESET GLOBAL & VARIABLES
    ------------------------------------------------------------ */
 :root {
-  --bg-color: #e8e9eb; /* Gris Cemento/Plata */
-  --text-color: #2f5499; /* Azul Oscuro (Texto base) */
-  --accent-color: #0059ff; /* Azul Eléctrico (Acentos/Hover) */
+  --bg-color: #e8e9eb;
+  --text-color: #2f5499;
+  --accent-color: #0059ff;
   --font-main: "Montserrat", sans-serif;
 }
 
@@ -49,23 +49,16 @@ main {
   letter-spacing: 1px;
 }
 
-/* Espaciado para páginas interiores (About/Contact) */
 .main-inner {
   padding-top: 180px !important;
   padding-bottom: 5rem;
-}
-
-@media (max-width: 768px) {
-  .main-inner {
-    padding-top: 120px !important;
-  }
 }
 
 /* ------------------------------------------------------------
    2. BOTONES & UI
    ------------------------------------------------------------ */
 .btn-graphic {
-  color: var(--bg-color) !important;
+  color: #ffffff !important;
   border: 1.5px solid var(--accent-color) !important;
   display: inline-block;
   border-radius: 50px;
@@ -165,7 +158,7 @@ main {
 }
 
 /* ------------------------------------------------------------
-   4. HERO SECTION (FONDO CON IMAGEN MÁS VISIBLE)
+   4. HERO SECTION
    ------------------------------------------------------------ */
 .hero-modern {
   height: 100vh;
@@ -176,20 +169,16 @@ main {
   align-items: center;
   position: relative;
   overflow: hidden;
-
-  /* --- FONDO --- */
   background-color: var(--bg-color);
   background-image: linear-gradient(
       rgba(232, 233, 235, 0.3),
       rgba(232, 233, 235, 0.3)
     ),
     url("../images/outfits2025.png");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -224,12 +213,8 @@ main {
 }
 
 @keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .hero-titles-wrapper {
@@ -250,32 +235,18 @@ main {
   transition: all 0.4s ease;
 }
 
-/* =========================================
-   TITULO: SOLID -> OUTLINE (COMO PIDES)
-   ========================================= */
-
-/* 1. ESTADO NORMAL: Azul Sólido */
 .type-outline {
-  /* Relleno Azul Eléctrico */
   color: var(--accent-color) !important;
-  
-  /* Sin borde (o borde invisible) */
-  -webkit-text-stroke: 0px; 
-  
-  /* Ajustes básicos */
+  -webkit-text-stroke: 0px;
   opacity: 1 !important;
   margin: 0;
   line-height: 0.85;
   cursor: default;
-  transition: all 0.3s ease; /* Transición suave */
+  transition: all 0.3s ease;
 }
 
-/* 2. HOVER: Se vuelve "Outline" (Borde azul, relleno claro) */
 .type-outline:hover {
-  /* Relleno del color del fondo (parece hueco) */
-  color: var(--bg-color) !important; 
-  
-  /* Aparece el borde Azul */
+  color: var(--bg-color) !important;
   -webkit-text-stroke: 2px var(--accent-color);
 }
 
@@ -321,19 +292,9 @@ main {
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  40% {
-    transform: translateX(-50%) translateY(-8px);
-  }
-  60% {
-    transform: translateX(-50%) translateY(-4px);
-  }
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-8px); }
+  60% { transform: translateX(-50%) translateY(-4px); }
 }
 
 /* ------------------------------------------------------------
@@ -589,7 +550,7 @@ main {
 }
 
 /* ------------------------------------------------------------
-   9. MENÚ MÓVIL Y RESPONSIVE
+   7. MENÚ MÓVIL
    ------------------------------------------------------------ */
 .mobile-menu-overlay {
   position: fixed;
@@ -653,42 +614,8 @@ main {
   line-height: 1;
 }
 
-@media (max-width: 768px) {
-  .mobile-toggle {
-    display: block;
-  }
-
-  .nav-group {
-    display: none !important;
-  }
-
-  .navbar-navegador {
-    width: 90%;
-    padding: 0 20px;
-    height: 50px;
-    top: 20px;
-  }
-
-  .big-type {
-    font-size: clamp(3rem, 15vw, 6rem);
-    line-height: 1.1;
-  }
-
-  .form-wrapper-premium {
-    padding-left: 0;
-    margin-top: 3rem;
-  }
-
-  .contact-hero-desc {
-    max-width: 100%;
-  }
-  .contact-email-big {
-    font-size: 1.3rem;
-  }
-}
-
 /* ------------------------------------------------------------
-   10. PRODUCT SLIDER (STYLE: HIGH-END DROPS - PANYEE PALETTE)
+   8. PRODUCT SLIDER
    ------------------------------------------------------------ */
 .product-slider-section {
   padding: 5rem 0;
@@ -816,38 +743,11 @@ main {
 .slider-arrow:hover {
   color: var(--accent-color);
 }
-.slider-arrow.left {
-  left: 0;
-}
-.slider-arrow.right {
-  right: 0;
-}
-
-@media (max-width: 991px) {
-  .product-slide-card {
-    min-width: calc((100% - 1.5rem) / 2);
-    flex: 0 0 calc((100% - 1.5rem) / 2);
-  }
-  .product-title {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .product-scroller-container {
-    padding: 0 15px;
-  }
-  .product-slide-card {
-    min-width: 85%;
-    flex: 0 0 85%;
-  }
-  .slider-arrow {
-    display: none;
-  }
-}
+.slider-arrow.left { left: 0; }
+.slider-arrow.right { right: 0; }
 
 /* ------------------------------------------------------------
-   11. FOOTER PRO (STRICT PALETTE)
+   9. FOOTER PRO
    ------------------------------------------------------------ */
 .footer-pro {
   background-color: var(--bg-color);
@@ -930,7 +830,6 @@ main {
   letter-spacing: 1px;
 }
 
-/* Firma Gigante al final */
 .footer-big-brand {
   font-size: clamp(2.5rem, 13.5vw, 16rem);
   font-weight: 900;
@@ -961,20 +860,9 @@ main {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .footer-pro {
-    padding-top: 3rem;
-  }
-  .footer-heading {
-    margin-top: 2rem;
-  }
-}
-
-/* =========================================
-   12. PÁGINAS ESPECÍFICAS (ABOUT, PROJECT, LANDING)
-   ========================================= */
-
-/* --- ABOUT PAGE --- */
+/* ------------------------------------------------------------
+   10. PÁGINAS ESPECÍFICAS (ABOUT, PROJECT, LANDING)
+   ------------------------------------------------------------ */
 .title-hero-about {
   color: var(--accent-color);
   font-weight: 800;
@@ -984,7 +872,6 @@ main {
   text-transform: uppercase;
 }
 
-/* --- PROJECT PAGE (CASE STUDIES) --- */
 .project-hero-title {
   font-size: clamp(4rem, 12vw, 10rem);
   font-weight: 900;
@@ -1037,11 +924,7 @@ main {
   color: var(--accent-color);
   transform: translateX(20px);
 }
-/* =========================================
-   12. LANDING PAGE (CORREGIDO)
-   ========================================= */
 
-/* Título Gigante */
 .landing-hero-title {
   font-size: clamp(3rem, 10vw, 8rem);
   font-weight: 900 !important;
@@ -1052,7 +935,6 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* Subtítulo */
 .landing-subtitle {
   font-size: 1.2rem;
   font-weight: 500;
@@ -1061,24 +943,15 @@ main {
   opacity: 0.8;
 }
 
-/* --- BOTÓN "FORCE FIX" --- */
-/* Usamos una clase muy específica para asegurar que se vea */
 a.btn-enter {
   display: inline-block !important;
-
-  /* FORZAMOS EL BORDE Y LA FORMA */
   border: 2px solid var(--accent-color) !important;
   border-radius: 50px !important;
-
-  /* COLORES Y TEXTO */
   color: var(--accent-color) !important;
   background-color: transparent !important;
-  text-decoration: none !important; /* Quita el subrayado feo */
-
-  /* TAMAÑO */
+  text-decoration: none !important;
   padding: 12px 40px !important;
   margin-top: 2rem !important;
-
   font-weight: 800;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -1087,10 +960,85 @@ a.btn-enter {
   cursor: pointer;
 }
 
-/* EFECTO HOVER */
 a.btn-enter:hover {
   background-color: var(--accent-color) !important;
   color: #ffffff !important;
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 89, 255, 0.3);
+}
+
+/* ============================================================
+   ZONA MEDIA QUERIES (AGRUPADAS AL FINAL)
+   ============================================================ */
+
+/* --- TABLET / SMALL LAPTOP (MAX 991px) --- */
+@media (max-width: 991px) {
+  .product-slide-card {
+    min-width: calc((100% - 1.5rem) / 2);
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+  }
+  .product-title {
+    font-size: 2rem;
+  }
+}
+
+/* --- MOBILE (MAX 768px) --- */
+@media (max-width: 768px) {
+  .main-inner {
+    padding-top: 120px !important;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-group {
+    display: none !important;
+  }
+
+  .navbar-navegador {
+    width: 90%;
+    padding: 0 20px;
+    height: 50px;
+    top: 20px;
+  }
+
+  .big-type {
+    font-size: clamp(3rem, 15vw, 6rem);
+    line-height: 1.1;
+  }
+
+  .form-wrapper-premium {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  .contact-hero-desc {
+    max-width: 100%;
+  }
+
+  .contact-email-big {
+    font-size: 1.3rem;
+  }
+
+  .product-scroller-container {
+    padding: 0 15px;
+  }
+
+  .product-slide-card {
+    min-width: 85%;
+    flex: 0 0 85%;
+  }
+
+  .slider-arrow {
+    display: none;
+  }
+
+  .footer-pro {
+    padding-top: 3rem;
+  }
+
+  .footer-heading {
+    margin-top: 2rem;
+  }
 }
