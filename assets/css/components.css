@@ -959,3 +959,64 @@ main {
     letter-spacing: -1px;       /* Kerning moderno */
     text-transform: uppercase;
 }
+/* =========================================
+   PÁGINAS DE PROYECTO
+   ========================================= */
+
+/* Título Gigante del Proyecto */
+.project-hero-title {
+    font-size: clamp(4rem, 12vw, 10rem);
+    font-weight: 900;
+    line-height: 0.85;
+    color: var(--text-color);
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Etiquetas de la ficha técnica (Role, Client, etc.) */
+.project-meta-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999; /* Gris técnico */
+    margin-bottom: 0.5rem;
+    display: block;
+    letter-spacing: 1px;
+}
+
+/* Valores de la ficha técnica */
+.project-meta-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Imágenes de proyecto (Ancho completo) */
+.project-img-full {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.5s ease;
+}
+
+.project-img-full:hover {
+    transform: scale(1.01); /* Pequeño zoom elegante al pasar el ratón */
+}
+
+/* Enlace al siguiente proyecto */
+.next-project-link {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.next-project-link:hover {
+    color: var(--accent-color); /* Azul Panyee */
+    transform: translateX(20px);
+}

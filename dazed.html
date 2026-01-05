@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAZED MAGAZINE | Bosco Oria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/components.css" />
+
+    <style>
+      .back-link:hover {
+        color: #0059ff !important; /* Azul Panyee al pasar el ratón */
+        padding-left: 5px; /* Pequeño movimiento a la derecha */
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="mobile-menu-overlay" id="mobileMenu">
+      <button class="mobile-close-btn" onclick="toggleMenu()">✕</button>
+      <a href="index.html#work" class="mobile-link" onclick="toggleMenu()"
+        >Work</a
+      >
+      <a href="about.html" class="mobile-link" onclick="toggleMenu()">About</a>
+      <a href="contact.html" class="mobile-link" onclick="toggleMenu()"
+        >Contact</a
+      >
+      <a href="https://instagram.com" class="mobile-link" onclick="toggleMenu()"
+        >Instagram</a
+      >
+    </div>
+
+    <nav class="navbar-navegador">
+      <div class="nav-container">
+        <div class="nav-group left d-none d-md-flex">
+          <a href="home.html" class="nav-link-item">WORK</a>
+          <a href="about.html" class="nav-link-item">ABOUT</a>
+        </div>
+        <a class="brand-center" href="index.html">BOSCO ORIA ©</a>
+        <div class="nav-group right d-none d-md-flex">
+          <a href="contact.html" class="nav-link-item">CONTACT</a>
+          <a
+            href="https://www.instagram.com/oriaservices/"
+            class="nav-link-item"
+            >IG</a
+          >
+        </div>
+        <button class="mobile-toggle d-flex d-md-none" onclick="toggleMenu()">
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <main class="container main-inner">
+      <div class="row mb-4 anim-element">
+        <div class="col-12">
+          <a
+            href="home.html"
+            class="text-decoration-none text-muted fw-bold text-uppercase back-link"
+            style="
+              font-size: 0.8rem;
+              letter-spacing: 1px;
+              transition: all 0.3s ease;
+            "
+          >
+            ← Back Home
+          </a>
+        </div>
+      </div>
+
+      <div class="row mb-5 pb-4 anim-element">
+        <div class="col-12">
+          <span
+            class="badge rounded-pill text-bg-dark mb-3 text-uppercase tracking-wide"
+          >
+            Editorial Design
+          </span>
+          <h1 class="project-hero-title">
+            DAZED MAGAZINE<br /><span class="text-accent"></span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row mb-5 pb-5 border-bottom anim-element">
+        <div class="col-lg-3 col-6 mb-4">
+          <span class="project-meta-label">Client</span>
+          <span class="project-meta-value">Concept / Academic</span>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <span class="project-meta-label">Role</span>
+          <span class="project-meta-value">Art Direction & Layout</span>
+        </div>
+        <div class="col-lg-3 col-6 mb-4">
+          <span class="project-meta-label">Year</span>
+          <span class="project-meta-value">2025</span>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <span class="project-meta-label">Tools</span>
+          <span class="project-meta-value"
+            >InDesign, Lightroom, Photography</span
+          >
+        </div>
+
+        <div class="col-lg-8 mt-4">
+          <p class="lead text-muted" style="font-weight: 500">
+            En este proyecto trasladamos las emociones de Twin Peaks, como el
+            misterio, la inquietud y la sensación de estar atrapado, desde el
+            bosque hacia la ciudad actual. La idea es mostrar que hoy lo extraño
+            no aparece en lugares remotos, sino en espacios cotidianos como
+            gasolineras, metros, calles o estructuras urbanas que también pueden
+            generar tensión. Reinterpretamos escenas clave para demostrarlo: la
+            bienvenida a Twin Peaks se convierte en una gasolinera vacía, el
+            viaje de Cooper ocurre en un metro silencioso, la conversación del
+            diner sucede sobre un coche detenido, la cárcel se transforma en
+            andamios y la Habitación Roja aparece en un paso de peatones. Todo
+            responde a una misma intención: lo que antes inquietaba en el bosque
+            ahora lo sentimos entre edificios, porque lo extraño forma parte de
+            nuestra vida diaria.
+          </p>
+        </div>
+      </div>
+
+      <section class="mb-5">
+        <div class="anim-element mb-4">
+          <img
+            src="assets/images/dazed.png"
+            class="project-img-full"
+            alt="Dazed Cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 anim-element">
+            <img
+              src="assets/images/twin.peacks_editada_4.jpg"
+              class="project-img-full"
+              alt="IMG-1"
+              loading="lazy"
+            />
+            <p class="text-muted small text-uppercase fw-bold mt-2 mb-5">
+              01. Image Treatment
+            </p>
+          </div>
+          <div class="col-md-6 anim-element">
+            <img
+              src="assets/images/twin.peacks_editada_5.jpg"
+              class="project-img-full"
+              alt="Img-2"
+              loading="lazy"
+            />
+            <p class="text-muted small text-uppercase fw-bold mt-2 mb-5">
+              02. Image Treatment
+            </p>
+          </div>
+        </div>
+
+        <div class="anim-element mt-4">
+          <img
+            src="assets/images/dazed-2.jpg"
+            class="project-img-full"
+            alt="Detail Macro"
+            loading="lazy"
+          />
+          <p class="text-muted small text-uppercase fw-bold mt-2 mb-5">
+              03. Mockup Detail
+            </p>
+        </div>
+      </section>
+
+      <div class="py-5 border-top border-bottom text-end anim-element">
+        <span class="text-muted text-uppercase small d-block mb-2"
+          >Next Project</span
+        >
+        <a href="index.html#work" class="next-project-link">PANYEE DEPT. →</a>
+      </div>
+    </main>
+
+    <footer class="footer-pro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h4 class="display-5 fw-bold mb-4" style="color: #0059ff">
+              Let's build<br />something iconic.
+            </h4>
+            <p class="text-muted mb-4" style="max-width: 300px">
+              Suscríbete para recibir noticias y actualizaciones de estudio.
+            </p>
+            <form action="#" class="footer-input-group">
+              <input
+                type="email"
+                class="footer-input"
+                placeholder="Your email address"
+              />
+              <button type="submit" class="footer-submit">JOIN</button>
+            </form>
+          </div>
+
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <h5 class="footer-heading">Sitemap</h5>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="index.html#work" class="footer-link">Selected Work</a>
+            <a href="about.html" class="footer-link">About Me</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h5 class="footer-heading">Socials</h5>
+            <a
+              href="https://www.instagram.com/oriaservices/"
+              target="_blank"
+              class="footer-link"
+              >Instagram</a
+            >
+            <a
+              href="https://www.linkedin.com/in/bosco-oria-fern%C3%A1ndez-a4a5a5321/"
+              target="_blank"
+              class="footer-link"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.behance.net/boscofdez"
+              target="_blank"
+              class="footer-link"
+              >Behance</a
+            >
+            <a href="mailto:Boscooria11@gmail.com" class="footer-link">Email</a>
+          </div>
+
+          <div class="col-lg-2 mt-4 mt-lg-0">
+            <h5 class="footer-heading">Info</h5>
+            <p class="text-muted small mb-1">Version: 1.0.0</p>
+            <p class="text-muted small mb-1" id="footer-clock">
+              Time: Local --:--:--
+            </p>
+            <p class="text-muted small mb-0">
+              Status: <span class="text-accent fw-bold">Available</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-big-brand">BOSCO ORIA</div>
+
+      <div class="footer-bottom">
+        <div class="container d-flex justify-content-between">
+          <span>© 2025 PANYEE DEPT.</span>
+          <span>ALL RIGHTS RESERVED</span>
+          <span class="d-none d-md-block">DESIGNED BY BOSCO</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
+      }
+    </script>
+  </body>
+</html>
