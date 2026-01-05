@@ -1041,4 +1041,9 @@ a.btn-enter:hover {
   .footer-heading {
     margin-top: 2rem;
   }
+  .hero-modern {
+    background-attachment: scroll !important; /* Desactiva el efecto fijo */
+    background-position: center center !important;
+    background-size: cover !important;
+  }
 }
