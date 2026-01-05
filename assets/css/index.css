@@ -3,11 +3,10 @@
    ========================================= */
 
 /* 1. Base (Variables & Reset) */
-@import url('./base.css');
+@import url("./base.css");
 
 /* 2. Layout (Estructura) */
-@import url('./layout.css');
+@import url("./layout.css");
 
 /* 3. Componentes (Estilos Visuales) */
-@import url('./components.css');
-
+@import url("./components.css");

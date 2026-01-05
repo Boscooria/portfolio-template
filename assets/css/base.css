@@ -1,28 +1,39 @@
 :root {
-    /* PALETA PANYEE DEPT. */
-    --bg-color: #e8e9eb;      /* Gris Fondo */
-    --text-color: #2f5499;    /* Azul Eléctrico */
-    --accent-color: #0059ff;  /* Azul Oscuro (Base texto) */
+  /* PALETA PANYEE DEPT. */
+  --bg-color: #e8e9eb; /* Gris Fondo */
+  --text-color: #2f5499; /* Azul Eléctrico */
+  --accent-color: #0059ff; /* Azul Oscuro (Base texto) */
 
-    /* UTILIDADES (Opacidades del Azul Oscuro) */
-    --accent-80: rgba(47, 84, 153, 0.8);
-    --accent-60: rgba(47, 84, 153, 0.6);
-    --accent-40: rgba(47, 84, 153, 0.4); 
-    --accent-10: rgba(47, 84, 153, 0.1); 
+  /* UTILIDADES (Opacidades del Azul Oscuro) */
+  --accent-80: rgba(47, 84, 153, 0.8);
+  --accent-60: rgba(47, 84, 153, 0.6);
+  --accent-40: rgba(47, 84, 153, 0.4);
+  --accent-10: rgba(47, 84, 153, 0.1);
 }
 
-html, body {
-    overflow-x: hidden !important;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--accent-color);
-    font-family: 'Montserrat', sans-serif;
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Utilidades de Texto Globales */
-.text-accent { color: var(--text-color) !important; }
-.tracking-wide { letter-spacing: 0.15em; font-weight: 500; }
-.font-small { font-size: 0.85rem; letter-spacing: 1px; }
-.hover-underline:hover { text-decoration: underline !important; }
+.text-accent {
+  color: var(--text-color) !important;
+}
+.tracking-wide {
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+.font-small {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+.hover-underline:hover {
+  text-decoration: underline !important;
+}

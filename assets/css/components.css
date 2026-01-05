@@ -165,7 +165,7 @@ main {
 }
 
 /* ------------------------------------------------------------
-   4. HERO SECTION
+   4. HERO SECTION (FONDO CON IMAGEN MÁS VISIBLE)
    ------------------------------------------------------------ */
 .hero-modern {
   height: 100vh;
@@ -176,7 +176,20 @@ main {
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  /* --- FONDO --- */
   background-color: var(--bg-color);
+  background-image: linear-gradient(
+      rgba(232, 233, 235, 0.3),
+      rgba(232, 233, 235, 0.3)
+    ),
+    url("../images/outfits2025.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -237,13 +250,32 @@ main {
   transition: all 0.4s ease;
 }
 
-.type-solid {
-  color: var(--accent-color);
-  -webkit-text-stroke: 0px;
+/* =========================================
+   TITULO: SOLID -> OUTLINE (COMO PIDES)
+   ========================================= */
+
+/* 1. ESTADO NORMAL: Azul Sólido */
+.type-outline {
+  /* Relleno Azul Eléctrico */
+  color: var(--accent-color) !important;
+  
+  /* Sin borde (o borde invisible) */
+  -webkit-text-stroke: 0px; 
+  
+  /* Ajustes básicos */
+  opacity: 1 !important;
+  margin: 0;
+  line-height: 0.85;
+  cursor: default;
+  transition: all 0.3s ease; /* Transición suave */
 }
 
-.type-outline {
-  color: var(--bg-color);
+/* 2. HOVER: Se vuelve "Outline" (Borde azul, relleno claro) */
+.type-outline:hover {
+  /* Relleno del color del fondo (parece hueco) */
+  color: var(--bg-color) !important; 
+  
+  /* Aparece el borde Azul */
   -webkit-text-stroke: 2px var(--accent-color);
 }
 
@@ -651,7 +683,7 @@ main {
     max-width: 100%;
   }
   .contact-email-big {
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
   }
 }
 
@@ -944,66 +976,66 @@ main {
 
 /* --- ABOUT PAGE --- */
 .title-hero-about {
-    color: var(--accent-color);
-    font-weight: 800;
-    font-size: clamp(3.5rem, 8vw, 6rem);
-    line-height: 0.9;
-    letter-spacing: -1px;
-    text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 /* --- PROJECT PAGE (CASE STUDIES) --- */
 .project-hero-title {
-    font-size: clamp(4rem, 12vw, 10rem);
-    font-weight: 900;
-    line-height: 0.85;
-    color: var(--accent-color);
-    letter-spacing: -2px;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 900;
+  line-height: 0.85;
+  color: var(--accent-color);
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .project-meta-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #999;
-    margin-bottom: 0.5rem;
-    display: block;
-    letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.5rem;
+  display: block;
+  letter-spacing: 1px;
 }
 
 .project-meta-value {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .project-img-full {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: transform 0.5s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s ease;
 }
 
 .project-img-full:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .next-project-link {
-    font-size: clamp(2rem, 5vw, 4rem);
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--text-color);
-    transition: all 0.3s ease;
-    display: inline-block;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .next-project-link:hover {
-    color: var(--accent-color);
-    transform: translateX(20px);
+  color: var(--accent-color);
+  transform: translateX(20px);
 }
 /* =========================================
    12. LANDING PAGE (CORREGIDO)
@@ -1011,54 +1043,54 @@ main {
 
 /* Título Gigante */
 .landing-hero-title {
-    font-size: clamp(3rem, 10vw, 8rem); 
-    font-weight: 900 !important; 
-    color: var(--accent-color) !important;
-    line-height: 0.8;       
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900 !important;
+  color: var(--accent-color) !important;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 /* Subtítulo */
 .landing-subtitle {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--text-color);
-    letter-spacing: 1px;
-    opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 /* --- BOTÓN "FORCE FIX" --- */
 /* Usamos una clase muy específica para asegurar que se vea */
 a.btn-enter {
-    display: inline-block !important;
-    
-    /* FORZAMOS EL BORDE Y LA FORMA */
-    border: 2px solid var(--accent-color) !important;
-    border-radius: 50px !important;
-    
-    /* COLORES Y TEXTO */
-    color: var(--accent-color) !important;
-    background-color: transparent !important;
-    text-decoration: none !important; /* Quita el subrayado feo */
-    
-    /* TAMAÑO */
-    padding: 12px 40px !important;
-    margin-top: 2rem !important;
-    
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  display: inline-block !important;
+
+  /* FORZAMOS EL BORDE Y LA FORMA */
+  border: 2px solid var(--accent-color) !important;
+  border-radius: 50px !important;
+
+  /* COLORES Y TEXTO */
+  color: var(--accent-color) !important;
+  background-color: transparent !important;
+  text-decoration: none !important; /* Quita el subrayado feo */
+
+  /* TAMAÑO */
+  padding: 12px 40px !important;
+  margin-top: 2rem !important;
+
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* EFECTO HOVER */
 a.btn-enter:hover {
-    background-color: var(--accent-color) !important;
-    color: #ffffff !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 89, 255, 0.3);
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 89, 255, 0.3);
 }
