@@ -174,7 +174,7 @@ main {
       rgba(232, 233, 235, 0.3),
       rgba(232, 233, 235, 0.3)
     ),
-    url("https://github.com/Boscooria/portfolio-template/blob/main/assets/images/outfits2025.png");
+    url("../images/outfits2025.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
