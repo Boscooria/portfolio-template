@@ -159,10 +159,10 @@ Página de error personalizada.
 - Botón borrar todo (borrar lo diseñado)
 
 ---
-### USO DE IA
+## Uso de Inteligencia Artificial
 
-    He utilizado IA (Gemini) como apoyo para estructurar y planificar el proyecto desde el inicio. En concreto, me ha servido para dividir el trabajo en fases, ordenar los apartados de la web y definir una arquitectura básica (secciones, jerarquía de contenidos y flujo de navegación), de manera que pudiera avanzar con una hoja de ruta clara y coherente.
+He utilizado IA (Gemini) como apoyo para estructurar y planificar el proyecto desde el inicio. En concreto, me ha servido para dividir el trabajo en fases, ordenar los apartados de la web y definir una arquitectura básica (secciones, jerarquía de contenidos y flujo de navegación), de manera que pudiera avanzar con una hoja de ruta clara y coherente.
 
-    Además, la IA me ayudó a generar una base inicial de contenido y organización sobre la que después he ido construyendo la web y una primera aproximación a textos que posteriormente he revisado y adaptado.
+Además, la IA me ayudó a generar una base inicial de contenido y organización sobre la que después he ido construyendo la web, así como una primera aproximación a textos que posteriormente he revisado y adaptado.
 
-    A partir de esa base, el desarrollo final se ha realizado integrando lo aprendido en clase y recursos de trabajos anteriores, aplicando buenas prácticas que ya había utilizado en proyectos previos. En resumen, la IA ha funcionado como una herramienta de apoyo en la planificación y el arranque, mientras que las decisiones finales y la implementación se han construido con criterio propio y con los conocimientos adquiridos durante el curso.
+A partir de esa base, el desarrollo final se ha realizado integrando lo aprendido en clase y recursos de trabajos anteriores, aplicando buenas prácticas que ya había utilizado en proyectos previos. En resumen, la IA ha funcionado como una herramienta de apoyo en la planificación y el arranque, mientras que las decisiones finales y la implementación se han construido con criterio propio y con los conocimientos adquiridos durante el curso.
