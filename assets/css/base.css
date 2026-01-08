@@ -1,14 +1,10 @@
 :root {
-  /* PALETA PANYEE DEPT. */
-  --bg-color: #e8e9eb; /* Gris Fondo */
-  --text-color: #2f5499; /* Azul Eléctrico */
-  --accent-color: #0059ff; /* Azul Oscuro (Base texto) */
+  /* PALETA COLOR*/
+  --bg-color: #e8e9eb; 
+  --text-color: #2f5499; 
+  --accent-color: #0059ff; 
 
-  /* UTILIDADES (Opacidades del Azul Oscuro) */
-  --accent-80: rgba(47, 84, 153, 0.8);
-  --accent-60: rgba(47, 84, 153, 0.6);
-  --accent-40: rgba(47, 84, 153, 0.4);
-  --accent-10: rgba(47, 84, 153, 0.1);
+
 }
 
 html,
