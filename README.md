@@ -13,6 +13,9 @@ La idea es crear una estructura sólida que funcione como:
 - Plantilla profesional preparada para bifurcarse y evolucionar  
 
 ---
+He dividido cada parte del proyecto en un archivo HTML distinto, ya que esta estructura facilita la organización del código, mejora la legibilidad y permite un mantenimiento más claro y escalable del sitio web. Al separar las distintas secciones (home, proyectos, about, contact, etc.), se consigue una mejor gestión de contenidos y se sientan las bases para futuras ampliaciones o adaptaciones del portfolio sin necesidad de rehacer la estructura general.
+
+Además, esta decisión responde a una lógica profesional de desarrollo web, similar a la utilizada en proyectos reales, y permite reutilizar componentes comunes como la navegación o el footer, manteniendo la coherencia visual y funcional en todo el sitio.
 
 ## Estructura del proyecto
 
